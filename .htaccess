@@ -1,0 +1,12 @@
+# contact file
+AddType text/x-vcard vcf
+
+# rewrite default URL
+RewriteEngine on
+#RewriteCond %{HTTP_HOST} !^estherbrunati\.co\.uk [NC]
+#RewriteRule ^/?(.*)$ http://estherbrunati.co.uk/$1 [L,R=301]
+
+# main view loader
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]

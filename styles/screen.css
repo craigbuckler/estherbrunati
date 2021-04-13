@@ -1,0 +1,568 @@
+/* Esther Brunati CSS, (c) OptimalWorks.net */
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	font-family: arial, helvetica, freesans, sans-serif;
+	font-size: 70%;
+	color: #343e49;
+	background: #d4d9e0 url("../images/header.png") 0 0 repeat-x;
+}
+
+/* layout */
+header, article, footer
+{
+	clear: both;
+	display: block;
+	width: 100%;
+}
+
+article.cols
+{
+	overflow: auto;
+}
+
+div.content
+{
+	width: 930px;
+	margin: 0 auto;
+}
+
+section, aside, footer nav
+{
+	display: inline;
+	float: left;
+	width: 610px;
+	margin: 0 30px 30px 0;
+}
+
+/* header */
+header
+{
+	height: 177px;
+	background: url("../images/esther-brunati-artist.jpg") 50% 0 no-repeat;
+}
+
+header p
+{
+	width: 420px;
+	height: 80px;
+	text-transform: uppercase;
+	text-indent: -9999px;
+	padding: 29px 0 35px 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+header p a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+header p sub
+{
+	display: block;
+}
+
+/* main navigation */
+header nav
+{
+	display: block;
+	width: 173px;
+	height: 27px;
+	margin: 0 auto;
+	background: url("../images/nav.png") 0 0 no-repeat;
+}
+
+nav ul
+{
+	list-style-type: none;
+	padding: 2px 0 0 2px;
+	margin: 0;
+}
+
+nav li
+{
+	display: inline;
+	float: left;
+	width: 53px;
+	height: 23px;
+	padding: 0;
+	margin: 0 5px 0 0;
+}
+
+nav li.last { margin-right: 0; }
+
+header nav a:link, header nav a:visited,
+header nav a:hover, header nav a:focus
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 22px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: #000 0px 1px 1px;
+}
+
+header nav a.active,
+header nav a:hover, header nav a:focus
+{
+	background: url("../images/nav-on.png") 0 0 no-repeat;
+}
+
+/* pagination */
+ul#pagination
+{
+	clear: both;
+	width: 164px;
+	height: 37px;
+	list-style-type: none;
+	padding: 0;
+	margin: 20px auto -6px auto;
+	background: url("../images/pagination.png") 0 0 no-repeat;
+}
+
+ul#pagination li
+{
+	display: inline;
+	float: left;
+	width: 82px;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+ul#pagination a:link, ul#pagination a:visited
+{
+	display: block;
+	width: 45px;
+	height: 23px;
+	text-align: center;
+	line-height: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 0 0 5px;
+	margin: 9px 4px 0 28px;
+	color: #83868d;
+	text-shadow: #fff 0px 2px 1px;
+}
+
+ul#pagination a:hover, ul#pagination a:focus
+{
+	text-decoration: none;
+	color: #505257;
+}
+
+ul#pagination a.next
+{
+	padding: 0 5px 0 0;
+	margin: 9px 0 0 4px;
+}
+
+/* article */
+article
+{
+	padding: 0 0 6px 0;
+	background: #808590 url("../images/main.png") 50% 0 repeat-y;
+	background:
+		url("../images/header-shadow.png") 50% 0 no-repeat,
+		#808590 url("../images/main.png") 50% 0 repeat-y;
+}
+
+/* gallery */
+ul#gallery
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul#gallery li
+{
+	display: inline;
+	float: left;
+	width: 290px;
+	padding: 0;
+	margin: 0 30px 0 0;
+}
+
+ul#gallery li.last
+{
+	margin-right: 0;
+}
+
+ul#gallery a:link, ul#gallery a:visited
+{
+	position: relative;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	padding: 40px 0 30px 0;
+	color: #505257;
+	cursor: pointer;
+	outline: 0 none;
+}
+
+ul#gallery a:hover, ul#gallery a:focus
+{
+	color: #111;
+}
+
+ul#gallery img
+{
+	display: block;
+	padding: 0 0 9px 0;
+	background: url("../images/picture-shadow.png") 50% 100% no-repeat;
+}
+
+button, a.button:link, a.button:visited, ul#gallery strong
+{
+	display: block;
+	height: 22px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	line-height: 20px;
+	text-shadow: #fff 0px 1px 1px;
+	margin-top: 10px;
+	background: url("../images/button.png") 50% 0 no-repeat;
+	border: 0 none;
+	cursor: pointer;
+}
+
+ul#gallery a:hover span, ul#gallery a:focus span
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../images/light.png") 50% 0 no-repeat;
+}
+
+/* full image */
+p.fullimage a
+{
+	outline: 0 none;
+}
+
+p.fullimage img
+{
+	display: block;
+	margin: 0 auto;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 10px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 10px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 10px;
+}
+
+/* footer */
+footer
+{
+	position: relative;
+	top: -6px;
+	text-shadow: #fff 0px 1px 1px;
+	padding: 38px 0 20px 0;
+	background: url("../images/footer.png") 0 0 repeat-x;
+}
+
+footer nav, #copyright
+{
+	color: #8c919b;
+}
+
+footer nav a
+{
+	margin: 0 10px;
+}
+
+footer nav a:first-child
+{
+	margin-left: 0;
+}
+
+#copyright
+{
+	text-align: right;
+}
+
+footer a:link, footer a:visited
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #8c919b;
+}
+
+footer a:hover, footer a:focus
+{
+	text-decoration: underline;
+	color: #323cad;
+}
+
+/* typography */
+h1
+{
+	clear: both;
+	font-size: 1.6em;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: #e2e4e7 0px 1px 1px;
+	margin: 0;
+	padding: 1em 0 0.3em 0;
+	color: #7c828f;
+}
+
+h1.page
+{
+	padding: 0;
+}
+
+h1.main
+{
+	text-align: left;
+}
+
+h2
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 15px 0;
+}
+
+p
+{
+	line-height: 1.5em;
+	margin: 0 0 1em 0;
+}
+
+ul
+{
+	list-style-type: disc;
+	margin: 1em 0 1.5em 2.5em;
+}
+
+li
+{
+	margin: 0.4em 0;
+}
+
+dl
+{
+	width: 290px;
+	margin: 0 auto 1em auto;
+	padding: 5px 15px 15px 15px;
+	background-color: #d4d9e0;
+	border: 1px solid #9aa5b6;
+	border-right-color: #fff;
+	border-bottom-color: #fff;
+}
+
+dt
+{
+	font-weight: bold;
+	text-shadow: #fff 0px 1px 1px;
+	margin: 10px 0 0 0;
+	color: #7c828f;
+}
+
+dd
+{
+	text-shadow: #fff 0px 1px 1px;
+}
+
+dd p
+{
+	margin: 0 0 10px 0;
+}
+
+img
+{
+	border: 0 none;
+}
+
+hr
+{
+	clear: both;
+	width: 100%;
+	height: 0;
+	margin: 0 0 20px 0;
+	border: 0 none;
+	border-top: 1px solid #a7acb8;
+	border-bottom: 1px solid #eef0f3;
+}
+
+a:link, a:visited
+{
+	text-decoration: underline;
+	color: #1c2162;
+}
+
+a:hover, a:focus
+{
+	text-decoration: none;
+	color: #323cad;
+}
+
+/* forms */
+fieldset
+{
+	clear: both;
+	margin: 1em 0;
+	border: 0 none;
+}
+
+legend
+{
+	display: none;
+}
+
+fieldset ol
+{
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+fieldset ol ol
+{
+	width: 45%;
+	float: left;
+	margin: 0 0 1em 4%;
+}
+
+fieldset li
+{
+	clear: both;
+	width: 100%;
+	padding: 0;
+	margin: 2px 0 !important;
+	background-image: none;
+}
+
+fieldset p
+{
+	margin: 0.5em 0 !important;
+}
+
+fieldset label
+{
+	display: inline;
+	float: left;
+	width: 14%;
+	text-align: right;
+	line-height: 1.6em;
+	margin-right: 1%;
+}
+
+fieldset label.help
+{
+	display: none;
+	float: none;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0.5em 0 0 15%;
+}
+
+fieldset li.error label.help { display: block; }
+
+fieldset ol li.checkbox label
+{
+	display: inline;
+	float: left;
+	width: auto;
+	font-weight: normal;
+	text-align: left;
+	line-height: 1.5em;
+	margin: 0 0.5em;
+}
+
+fieldset a
+{
+	font-style: italic;
+	line-height: 1.5em;
+}
+
+input, select, textarea
+{
+	width: 70%;
+	font-family: arial, helvetica, helv, freesans, sans-serif;
+	font-size: 1em;
+	padding: 2px 3px;
+	margin: 0;
+	color: #444;
+	background-color: #d4d9e0;
+	border: 1px solid #40464d;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+textarea
+{
+	overflow: auto;
+}
+
+input:focus, textarea:focus, select:focus
+{
+	color: #333;
+	background-color: #fff;
+	-webkit-box-shadow: rgba(150, 0, 0, 0.4) 0 0 6px;
+	-moz-box-shadow: rgba(150, 0, 0, 0.4) 0 0 6px;
+	box-shadow: rgba(150, 0, 0, 0.4) 0 0 6px;
+}
+
+.checkbox input
+{
+	display: inline;
+	float: left;
+	width: auto;
+	padding: 0;
+	margin: 0.3ex 0 0 0;
+	border: 0 none;
+	color: #000;
+	background: transparent none !important;
+	outline: 0 none;
+}
+
+ol.first li.checkbox input
+{
+	margin-left: 25%;
+}
+
+button
+{
+	width: 112px;
+	height: auto;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 1px 0 7px 0;
+	margin: 6px auto;
+	color: #505257;
+}
+
+button:hover, button:focus
+{
+	color: #323cad;
+}
+
+ol.form li.button input:hover, ol.form li.button input:focus
+{
+	color: #fff;
+	background-position: 0 -47px;
+}
+
+.inpmed { width: 40%; }
+.error { font-weight: bold; color: #600; }

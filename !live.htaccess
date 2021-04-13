@@ -20,8 +20,8 @@ ExpiresDefault "access plus 1 month"
 RewriteEngine on
 
 # enforce HTTPS
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://estherbrunati.co.uk/$1 [L,R=301]
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://estherbrunati.co.uk/$1 [L,R=301]
 
 RewriteCond %{HTTP_HOST} !^estherbrunati\.co\.uk [NC]
 RewriteRule ^/?(.*)$ https://estherbrunati.co.uk/$1 [L,R=301]

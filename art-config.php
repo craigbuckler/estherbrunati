@@ -4,6 +4,28 @@
 global $galleryart;
 $galleryart = array(
 
+	'new-beginnings-1' => array(
+		'name' => 'New Beginnings 1',
+		'year' => 2021,
+		'media' => 'acrylic on canvas',
+		'width' => 18,
+		'height' => 48,
+		'desc' => '',
+		'price' => 0,
+		'active' => false
+	),
+
+	'new-beginnings-2' => array(
+		'name' => 'New Beginnings 2',
+		'year' => 2021,
+		'media' => 'acrylic on canvas',
+		'width' => 18,
+		'height' => 48,
+		'desc' => '',
+		'price' => 0,
+		'active' => false
+	),
+
 	'conception' => array(
 		'name' => 'Conception',
 		'year' => 2005,
@@ -178,28 +200,6 @@ $galleryart = array(
 		'desc' => '',
 		'price' => 0,
 		'active' => false
-	),
-
-	'new-beginning-1' => array(
-		'name' => 'New Beginning 1',
-		'year' => 2021,
-		'media' => 'acrylic mixed media on canvas',
-		'width' => 90,
-		'height' => 30,
-		'desc' => '',
-		'price' => 0,
-		'active' => false
-	),
-
-	'new-beginning-2' => array(
-		'name' => 'New Beginning 2',
-		'year' => 2021,
-		'media' => 'acrylic mixed media on canvas',
-		'width' => 90,
-		'height' => 30,
-		'desc' => '',
-		'price' => 0,
-		'active' => false
 	)
 
 );
@@ -209,12 +209,12 @@ $galleryart = array(
 global $gallerypages;
 $gallerypages = array(
 
-	1 => 'phase,pandora,phlox',
+	1 => 'new-beginnings-1,fireworks-3,new-beginnings-2',
 	2 => 'slalom,growth,fireworks-1',
-	3 => 'rhythm-1,fireworks-4,separation',
-	4 => 'flight,fireworks-2,rhythm-2',
+	3 => 'rhythm-1,separation,fireworks-4',
+	4 => 'fireworks-2,flight,rhythm-2',
 	5 => 'conception,flow,mirage',
-	6 => 'fireworks-3,new-beginning-1,new-beginning-2'
+	6 => 'phase,pandora,phlox'
 
 );
 

@@ -28,7 +28,8 @@ article.cols
 
 div.content
 {
-	width: 930px;
+	width: 90vw;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -191,9 +192,9 @@ ul#gallery li
 {
 	display: inline;
 	float: left;
-	width: 290px;
+	width: 30%;
 	padding: 0;
-	margin: 0 30px 0 0;
+	margin: 0 1.65%;
 }
 
 ul#gallery li.last
@@ -221,8 +222,14 @@ ul#gallery a:hover, ul#gallery a:focus
 ul#gallery img
 {
 	display: block;
+	width: 100%;
+	max-width: 600px;
+	height: calc(100vh - 365px);
+	min-height: 180px;
+	max-height: 600px;
+	object-fit: contain;
 	padding: 0 0 9px 0;
-	background: url("../images/picture-shadow.png") 50% 100% no-repeat;
+	filter: drop-shadow(0 3px 5px rgba(0,0,0,0.5));
 }
 
 button, a.button:link, a.button:visited, ul#gallery strong
@@ -233,11 +240,15 @@ button, a.button:link, a.button:visited, ul#gallery strong
 	text-align: center;
 	text-decoration: none;
 	line-height: 20px;
-	text-shadow: #fff 0px 1px 1px;
+	text-shadow: #fff 0 1px 1px;
 	margin-top: 10px;
 	background: url("../images/button.png") 50% 0 no-repeat;
 	border: 0 none;
 	cursor: pointer;
+}
+
+ul#gallery a:hover img, ul#gallery a:focus img {
+	filter: drop-shadow(0 5px 5px rgba(0,0,0,0.7));
 }
 
 ul#gallery a:hover span, ul#gallery a:focus span

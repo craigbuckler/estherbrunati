@@ -16,10 +16,10 @@ include('art-config.php');
 
 $out = '';
 foreach ($galleryart as $id => $art) {
-	$out .= 
+	$out .=
 		"<li>" .
-		"<a href=\"${root}gallery/$id\">&#8220;${art['name']}&#8221;</a> &ndash; " . 
-		($art['year'] ? $art['year'] . ', ' : '') . 
+		"<a href=\"${root}gallery/$id\">&#8220;${art['name']}&#8221;</a> &ndash; " .
+		($art['year'] ? $art['year'] . ', ' : '') .
 		$art['media'] .
 		($art['price'] < 0 ? ' (sold)' : '') .
 		"</li>\n";
@@ -30,4 +30,4 @@ if ($out) echo "\n<ul>\n$out</ul>";
 
 </section>
 
-<p class="fullimage"><img src="[[root]]images/esther-brunati.jpg" width="290" height="300" alt="Esther Brunati, UK artist" /></p>
+<!-- <p class="fullimage"><img src="[[root]]images/esther-brunati.jpg" width="290" height="300" alt="Esther Brunati, UK artist" /></p> -->
